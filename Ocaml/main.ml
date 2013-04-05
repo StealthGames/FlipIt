@@ -22,6 +22,12 @@ let new_methode_period period phase =
   }
 ;;
 
+let print_score (a,b) =
+	print_string (
+		"joueur 1 : "^(string_of_float a)^
+		"\njoueur 2 : "^(string_of_float b)^"\n")
+;;
+
 (* ************************************************************************** *)
 (*                                                                            *)
 (* ************************************************************************** *)
@@ -49,6 +55,10 @@ let game met1 met2 time =
 (*                                                                            *)
 (* ************************************************************************** *)
 
+let period1 = float_of_string Sys.argv.(1);;
+let period2 = float_of_string Sys.argv.(2);;
 
-game (new_methode_period 2. 0.) (new_methode_period 3. 0.5) 50.;;
+print_score (game (new_methode_period period1 0.) (new_methode_period period2 0.5) 50.);;
+
+(*print_score (game (new_methode_period 2. 0.) (new_methode_period 3. 0.5) 50.);;*)
 

@@ -16,22 +16,31 @@ It's easy to sea that :
 =\frac{1}{\alpha}\lim_{N\rightarrow+\infty}\frac{1}{N/\alpha}
 \underset{n=0}{\overset{N/\alpha}{\sum}}\mathrm{frac}\left(\alpha n+\varphi_{0}\right)\]
 
-So we have :\[
+So, we have :\[
 \Gamma\left(1,\:\alpha,\:\varphi_{0}\right)=\frac{1}{\alpha}\lim_{N\rightarrow+\infty}\frac{1}{N}
 \underset{n=0}{\overset{N}{\sum}}\mathrm{frac}\left(\alpha n+\varphi_{0}\right)\]
 
 Then, it's easy to calcul the average gain rate.
 
-If $\alpha=\frac{p}{q}\in\mbb{Q}$ where $\mathrm{pgcd}\pars{p,\: q}=1$.
-We can assume that $ p \leq q $.
-
-\manque{Traduction : Quand $n$ décrit les entiers de $1$ à $q$, $p.n [mod q]$ décrit
-aussi tout les entiers de $1$ à $q$.}
+For the first case, we assume that $\alpha=\frac{p}{q}+r\in\mbb{Q}$ where $\mathrm{pgcd}\pars{p,\: q}=1$ and $ p<q $.\\
+Because $p$ and $q$ are mutually prime integers, the two set $\segint{1,\:n}$ and
+$\left\{p.n\;\left[\mathrm{mod}\: q\right]\: n\in\segint{1,\:n}\right\}$.
 We can conclude that :\[
 \underset{n=1}{\overset{q}{\sum}}\mathrm{frac}\left(\frac{p}{q}n\right)
 =\underset{n=1}{\overset{q}{\sum}}\frac{\left(p.n\;\left[\mathrm{mod}\: q\right]\right)}{q}
 =\underset{n=1}{\overset{q}{\sum}}\frac{n}{q}=\frac{q.\left(q+1\right)}{2q}=\frac{q+1}{2}\]
 
-So we can proove that : \[
-\Gamma\left(1,\:\alpha,\:\varphi_{0}\right)=\dots
+Eventually, we can proove that : \[
+\Gamma\left(1,\:\frac{p}{q},\:0^{+}\right)=\frac{q+1}{2p} \qquad
+\Gamma\left(1,\:\frac{p}{q},\:0^{-}\right)=\frac{q-1}{2p}
+\]
+
+For the second case, we assume that $\alpha$ is an irrationnal number.
+So the sequence of $ \mathrm{frac}\left(\alpha.n\right)_{n\in\mbb{R}} $ is uniformly distributed
+and we have : \[
+\lim_{N\rightarrow+\infty}\frac{1}{N}
+\underset{n=0}{\overset{N}{\sum}}\mathrm{frac}\left(\alpha n\right) = \frac{1}{2}
+\]
+And then : \[
+\forall\varphi\in\mbb{R}\quad\Gamma\left(1,\:\alpha,\:\varphi_{0}\right)=\frac{1}{2\alpha}
 \]

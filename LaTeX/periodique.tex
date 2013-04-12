@@ -8,8 +8,30 @@ Let $ \Gamma\left(\alpha_0,\:\alpha_1,\:\varphi_1\right) $ be the average gain r
 It's easy to sea that :
 \[ \Gamma\left(\alpha_0,\:\alpha_1,\:\varphi_1\right) = \Gamma\left(1,\:\frac{\alpha_1}{\alpha_0},\:\varphi_1\right) \]
 
-\texttt{[Superbe dessin]}
+\manque{Dessin et explication pour arriver à la formule}
 
-%\[ \Gamma\left(1,\:\frac{\alpha_1}{\alpha_0},\:\varphi_1\right)
-%= \lim_{N\rightarrow +\infty} \frac{1}{N}
-%\underset{n\geq 0}{\underset{\alpha n\leq N}{\bigsum}}\]
+\[
+\Gamma\left(1,\:\alpha,\:\varphi_{0}\right)=\lim_{N\rightarrow+\infty}\frac{1}{N}
+\underset{\alpha n<N}{\underset{n\geq0}{\sum}}\mathrm{frac}\left(\alpha n+\varphi_{0}\right)
+=\frac{1}{\alpha}\lim_{N\rightarrow+\infty}\frac{1}{N/\alpha}
+\underset{n=0}{\overset{N/\alpha}{\sum}}\mathrm{frac}\left(\alpha n+\varphi_{0}\right)\]
+
+So we have :\[
+\Gamma\left(1,\:\alpha,\:\varphi_{0}\right)=\frac{1}{\alpha}\lim_{N\rightarrow+\infty}\frac{1}{N}
+\underset{n=0}{\overset{N}{\sum}}\mathrm{frac}\left(\alpha n+\varphi_{0}\right)\]
+
+Then, it's easy to calcul the average gain rate.
+
+If $\alpha=\frac{p}{q}\in\mbb{Q}$ where $\mathrm{pgcd}\pars{p,\: q}=1$.
+We can assume that $ p \leq q $.
+
+\manque{Traduction : Quand $n$ décrit les entiers de $1$ à $q$, $p.n [mod q]$ décrit
+aussi tout les entiers de $1$ à $q$.}
+We can conclude that :\[
+\underset{n=1}{\overset{q}{\sum}}\mathrm{frac}\left(\frac{p}{q}n\right)
+=\underset{n=1}{\overset{q}{\sum}}\frac{\left(p.n\;\left[\mathrm{mod}\: q\right]\right)}{q}
+=\underset{n=1}{\overset{q}{\sum}}\frac{n}{q}=\frac{q.\left(q+1\right)}{2q}=\frac{q+1}{2}\]
+
+So we can proove that : \[
+\Gamma\left(1,\:\alpha,\:\varphi_{0}\right)=\dots
+\]

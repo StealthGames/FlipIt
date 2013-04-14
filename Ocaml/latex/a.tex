@@ -1,0 +1,19 @@
+% Header.
+\documentclass{article}
+
+\usepackage{tikz}
+
+
+\begin{document}
+% Drawrectangle.
+% Use: \drawrect{\xmin}{\xmax}{\ymin}{\ymax}{\color}
+\newcommand{\drawrect}[5]
+{
+	\coordinate (p1) at (#1, #3); %(\xmin, \ymin)
+	\coordinate (p2) at (#2, #3); %(\xmax, \ymin)
+	\coordinate (p3) at (#2, #4); %(\xmax, \ymax)
+	\coordinate (p4) at (#1, #4); %(\xmin, \ymaxx)
+	\filldraw[fill=#5] (p1) -- (p2) -- (p3) -- (p4) -- cycle;
+}
+% Footer.
+\end{document}

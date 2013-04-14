@@ -1,4 +1,3 @@
-
 Flipit is a tool that simulate a variation of the Rivest's game FliptIt.
 
 INSTALLATION
@@ -22,4 +21,5 @@ HELP
 
 You can see the list of FlipIt's options by doing:
 
-    cubicle -h
+    flipit -h
+

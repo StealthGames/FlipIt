@@ -25,13 +25,13 @@ So, we have :\[
 Then, it's easy to calcul the average gain rate.
 
 For the first case, we assume that $\alpha=\frac{p}{q}+r\in\mbb{Q}$ where $\mathrm{pgcd}\pars{p,\: q}=1$ and $ p<q $.\\
-Because $p$ and $q$ are co-prime integers, the two set $\segint{0,\:q-1}$ and
-$\left\{p.n\;\left[\mathrm{mod}\: q\right]\: n\in\segint{0,\:q-1}\right\}$ are equal.
+Because $p$ and $q$ are co-prime integers, the two set $\segint{1,\:n}$ and
+$\left\{p.n\;\left[\mathrm{mod}\: q\right]\: n\in\segint{1,\:n}\right\}$ are equal.
 We can conclude that :\[
-\underset{n=0}{\overset{q-1}{\sum}}\mathrm{frac}\left(\pars{\frac{p}{q}+r}n\right)
-=\underset{n=0}{\overset{q-1}{\sum}}\mathrm{frac}\left(\frac{p}{q}n\right)
-=\underset{n=0}{\overset{q-1}{\sum}}\frac{\left(p.n\;\left[\mathrm{mod}\: q\right]\right)}{q}
-=\underset{n=0}{\overset{q-1}{\sum}}\frac{n}{q}=\frac{q.\left(q-1\right)}{2q}=\frac{q-1}{2}\]
+\underset{n=1}{\overset{q}{\sum}}\mathrm{frac}\left(\pars{\frac{p}{q}+r}n\right)
+=\underset{n=1}{\overset{q}{\sum}}\mathrm{frac}\left(\frac{p}{q}n\right)
+=\underset{n=1}{\overset{q}{\sum}}\frac{\left(p.n\;\left[\mathrm{mod}\: q\right]\right)}{q}
+=\underset{n=1}{\overset{q}{\sum}}\frac{n}{q}=\frac{q.\left(q+1\right)}{2q}=\frac{q+1}{2}\]
 
 Eventually, we can proove that : \[
 \Gamma\left(1,\:\frac{p}{q}+r,\:0^{+}\right)=\frac{q+1}{2p} \qquad

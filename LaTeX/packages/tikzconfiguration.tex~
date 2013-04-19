@@ -12,7 +12,7 @@
 %\tikzstyle{rempli1} = [draw=none, fill=red!20]
 %\tikzstyle{rempli2} = [draw=none, fill=blue!20]
 
-\newcommand*{\hauteur}{1.5}
+\newcommand*{\hauteur}{1}
 \newcommand*{\hauteurr}{1}
 
 \newcommand{\drawbulletforplayer}[2]{

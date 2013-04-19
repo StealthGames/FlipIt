@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.12)  19 APR 2013 17:14
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.12)  19 APR 2013 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"Article - 2013 03 29.tex"
-(./Article - 2013 03 29.tex
+**sequence.tex
+(./sequence.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
 aded.
@@ -638,21 +638,21 @@ File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.
 code.tex
 File: tikzlibrarycalc.code.tex 2009/09/04 v2.10 (rcs-revision 1.6)
-))) (./Article - 2013 03 29.aux)
-\openout1 = `"Article - 2013 03 29.aux"'.
+))) (./sequence.aux)
+\openout1 = `sequence.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -746,50 +746,49 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 23.
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./periodique.tex
-Overfull \hbox (21.79999pt too wide) in paragraph at lines 12--13
-[][] 
+Overfull \hbox (70.5556pt too wide) in paragraph at lines 41--42
+ [][] 
  []
 
-[2]) [3] (./Article - 2013 03 29.aux) ) 
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sequence.aux) ) 
 Here is how much of TeX's memory you used:
- 11934 strings out of 495059
- 215270 string characters out of 3182030
- 274250 words of memory out of 3000000
- 14823 multiletter control sequences out of 15000+200000
- 21508 words of font info for 53 fonts, out of 3000000 for 9000
+ 11892 strings out of 495059
+ 215049 string characters out of 3182030
+ 269238 words of memory out of 3000000
+ 14820 multiletter control sequences out of 15000+200000
+ 4403 words of font info for 15 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,6n,55p,486b,191s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/simon/.texmf-var/fonts/pk/ljfour
-/jknappen/ec/ecbx0700.600pk> </home/simon/.texmf-var/fonts/pk/ljfour/jknappen/e
-c/ectt1000.600pk> </home/simon/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.
-600pk> </home/simon/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </ho
-me/simon/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/simon/.t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/simon/.texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ectt0900.600pk> </home/simon/.texmf-var/fonts/pk/ljfo
-ur/jknappen/ec/ecti0900.600pk> </home/simon/.texmf-var/fonts/pk/ljfour/jknappen
-/ec/ecrm0900.600pk> </home/simon/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx090
-0.600pk> </home/simon/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </
-home/simon/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y7.pfb>
-Output written on "Article - 2013 03 29.pdf" (3 pages, 165508 bytes).
+ 60i,8n,65p,472b,652s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/
+simon/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk>
+Output written on sequence.pdf (1 page, 2599 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 16 PDF objects out of 1000 (max. 8388607)
+ 11 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

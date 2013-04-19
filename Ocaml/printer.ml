@@ -20,7 +20,7 @@ let print_header () =
 	printf "// Time: %s@\n" (time ())
 
 let rec print_flip player_number time =
-	printf "%d\t%f@\n" player_number time
+	printf "%d %f@\n" player_number time
 
 let rec print_lists l1 l2 = match (l1, l2) with
 	| (hd1 :: tl1, hd2 :: tl2) ->

@@ -10,6 +10,13 @@ history.cmo: history.ml
 printer.cmo: printer.ml
 	ocamlc -c printer.ml
 
+parser: parser.cmo
+	ocamlc str.cma parser.cmo -o parser
+
+parser.cmo:
+	ocamlc -c parser.ml
+
+
 clean:
 	rm -f *.cmi *.cmo
 

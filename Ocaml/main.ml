@@ -41,13 +41,17 @@ let game met1 met2 time =
     else (
 	if t1<t2 then (
 	    met1.give_info (t,p);
-	    boucle (add_s s (t1 -. t) p) (met1.next_move (), t2) t1 1 )
+		History.add 1 t1;
+	    boucle (add_s s (t1 -. t) p) (met1.next_move (), t2) t1 1)
 	else (
 	    met2.give_info (t,p);
-	    boucle (add_s s (t2 -. t) p) (t1, met2.next_move ()) t2 2 )
-    )
-  in 
-    met1.init (); met2.init ();
+		History.add 2 t2;
+	    boucle (add_s s (t2 -. t) p) (t1, met2.next_move ()) t2 2)
+	)
+  in
+	History.init();
+    met1.init ();
+	met2.init ();
     boucle (0.,0.) (met1.next_move (), met2.next_move ()) 0. 1
 ;;
 
@@ -55,10 +59,12 @@ let game met1 met2 time =
 (*                                                                            *)
 (* ************************************************************************** *)
 
-let period1 = float_of_string Sys.argv.(1);;
-let period2 = float_of_string Sys.argv.(2);;
+let period1 = try float_of_string Sys.argv.(1) with _ -> 2.;;
+let period2 = try float_of_string Sys.argv.(2) with _ -> 3.;;
 
-print_score (game (new_methode_period period1 0.) (new_methode_period period2 0.5) 50.);;
+let _ = game (new_methode_period period1 0.) (new_methode_period period2 0.5) 50.;;
 
 (*print_score (game (new_methode_period 2. 0.) (new_methode_period 3. 0.5) 50.);;*)
+
+History.print ();;
 

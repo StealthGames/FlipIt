@@ -1,15 +1,15 @@
-flipit: printer.cmx history.cmx main.cmx
-	ocamlopt printer.cmx history.cmx main.cmx -o flipit
+flipit: printer.cmo history.cmo main.cmo
+	ocamlc unix.cma printer.cmo history.cmo main.cmo -o flipit
 
-main.cmx: main.ml
-	ocamlopt -c main.ml
+main.cmo: main.ml
+	ocamlc -c main.ml
 
-history.cmx: history.ml
-	ocamlopt -c history.ml
+history.cmo: history.ml
+	ocamlc -c history.ml
 
-printer.cmx: printer.ml
-	ocamlopt -c printer.ml
+printer.cmo: printer.ml
+	ocamlc -c printer.ml
 
 clean:
-	rm -f *.cmi *.cmx *.o flipit
+	rm -f *.cmi *.cmo
 

@@ -35,5 +35,5 @@ let add player_number time =
 		| _ -> failwith "History.add_to_history Error: Unknow player number"
 
 let print () =
-	Printer.latex history.player1 history.player2
+	Printer.console history.player1 history.player2
 

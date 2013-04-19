@@ -1,0 +1,32 @@
+\input{package}
+
+\begin{document}
+
+
+
+\begin{tikzpicture}[]
+%[->,>=stealth',shorten >=1pt,auto,node distance=3cm,
+%  thick,main node/.style={circle,fill=blue!20,draw,font=\sffamily\Large\bfseries}
+
+
+\drawbulletforplayer{1.333333}{1}
+\drawbulletforplayer{4.000000}{1}
+\drawbulletforplayer{6.666667}{1}
+\drawbulletforplayer{9.333333}{1}
+\drawbulletforplayer{12.000000}{1}
+\drawbulletforplayer{0.666667}{-1}
+\drawbulletforplayer{6.666667}{-1}
+\drawbulletforplayer{8.133333}{-1}
+\drawbulletforplayer{10.000000}{-1}
+\drawrectforplayer{0.000000}{0.666667}{1}
+\drawrectforplayer{0.666667}{1.333333}{-1}
+\drawrectforplayer{1.333333}{6.666667}{1}
+\drawrectforplayer{6.666667}{9.333333}{-1}
+\drawrectforplayer{9.333333}{10.000000}{1}
+\drawrectforplayer{10.000000}{12.000000}{-1}
+\drawrectforplayer{12.000000}{13.000000}{1}
+
+  
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,7 @@
+%Drawbullet
+%Usage: \drawbullet{x}{y}{color}
+
+\newcommand{\drawbullet}[3]
+{
+  \node[draw,circle,fill=#3] at (#1,#2) {};
+}

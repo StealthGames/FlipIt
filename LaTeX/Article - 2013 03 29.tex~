@@ -1,0 +1,109 @@
+\input{package}
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Ideal cryptography systems are based on a secret, a key, however advanced Persistent
+Threat (APT) have undermined secure protocols. \emph{FlipIt} [1], [2] is a recent
+two-player game between an attacker and defender. It provides a simple and elegant
+framework to formalize their interactions and allows the description of pratical
+threats.
+
+We propose a variant of FlipIt, a two-player game where players compete to control
+a shared ressource. Players can move at any given time, taking control of the
+ressource. However the identity of the player controlling the ressource is not
+revealed until a player actually moves. We consider that the average move rate by
+player is bounded, the number of moves made by player up to an including time can
+not be greater than a constant times this time.
+
+First we introduce formal definitions and notation in order to make an exhaustive
+description of our variant of FliIt.
+
+\texttt{[Describe here the end of the structure of this article]}
+
+\texttt{[Describe here the results of this article]}
+\end{abstract}
+
+
+\section{Formal Definition and Notation}
+This section gives a formal definition of the variant of FlipIt.
+
+\paragraph{Players}
+There are two players identified with 0 and 1. Keep the game symetric between the
+two players will be useful for our studies.
+
+\paragraph{Time}
+The game begins at time $ t = 0 $ and continues indefinitely. It is viewed as being
+continuous.
+
+\paragraph{Game state}
+$ C \left( t \right) $ denotes the current player controlling the ressource at
+time $ t $, $ C \left( t \right) $ is either $ 0 $ or $ 1 $. For $i = 0, 1 $ let
+$ C_i \left( t \right) = \un_{ \{ C \left( t \right) = i \} } $ two
+\qquote{indicator functions}.
+
+\paragraph{Moves}
+A player may \qquote{flip the ressource} or \qquote{move} at any time, but he is
+not allowed to exceed a fixed \qquote{average move rate}. A player cannot move  
+more than once at a given time. If different players play at the same time then 
+the moves \qquote{cancel} and everything goes such as nothing happened. We      
+introduce the following notations:
+\[ \textbf{t} = t_0 \: t_1 \: \dots \: t_n \: \dots \]
+denotes the \qquote{sequence of moves times by both players},
+\newpage
+\[ \textbf{n} \left( t \right) = \mathrm{Card} \{t_n : t_n \leq t \} \]
+denotes the \qquote{number of moves made by both players up to an including time $ t $},
+\[ \boldsymbol\alpha \left( t \right) = \frac{ \textbf{n} \left( t \right) }{t} \]
+denotes the \qquote{average move rate by both players}. We can define notations 
+for same entities only for one player, let consider player $ i $:
+\[ \textbf{t}_i = t_{i,0} \: t_{i,1} \: \dots \: t_{i,n} \: \dots
+\qquad \textbf{n}_i \left( t \right) = \mathrm{Card} \{t_{i,n} : t_{i,n} \leq t \}
+\qquad \boldsymbol\alpha_i \left( t \right) = \frac{ \textbf{n}_i \left( t \right) }{t} \]
+denote the \qquote{sequence of moves times by player $ i $}, the \qquote{number 
+of moves made by players $ i $ up to an including time $ t $}, denotes the      
+\qquote{average move rate by player $ i $}.
+
+\paragraph{Rule}
+For a given player i let $ \textbf{A}_i \in \mbb{R}^+ $ denotes the \qquote{average   
+move rate upper bound for player $ i $}. The moves of this player have to verify
+at any time $ t $:
+\[ \boldsymbol\alpha_i \left( t \right) \leq \textbf{A}_i \]
+Which means that a player capitalized time into opportunities to play.
+
+\paragraph{Gain}
+For a given game at any time $ t $:
+\[ \textbf{G}_i \left( t \right) = \iinte{0}{t}{\textbf{C}_i \left( u \right)}{u} \]
+denotes the \qquote{total gain by player $ i $ up to time $ t $} which is not really
+convenient for our studies. We introduce another metric:
+\[ \boldsymbol\gamma_i \left( t \right) = \frac{\textbf{G}_i \left( t \right)}{t} \]
+which denotes the \qquote{average gain rate for player $ i $ up to time $ t $} and
+leads to the value:
+\[ \boldsymbol\Gamma_i = \lim_{ t \rightarrow +\infty} \boldsymbol\gamma_i \left( t \right) \]
+This \qquote{average gain rate for player $ i $} will found our game's strategy comparisons.
+
+\section{Playing periodically}
+\input{periodique}
+\begin{thebibliography}{9}
+
+\bibitem{illegi}
+  R. L. Rivest,
+  \emph{Illegitimi non carborundum},
+  Invited keynote talk given at CRYPTO 2011,
+  August 15, 2011.
+
+\bibitem{flipit}
+  M.van Dijk, A. Juels, A. Oprea, and R. L. Rivest,
+  \emph{FlipIt: The Game of "Stealthy Takeover"},
+  To appear in Journal of Cryptology,
+  2012.
+
+\bibitem{defend}
+  K. D. Bowers, M. van Dijk, R. Griffin, A. Juels, A. Oprea, R. L. Rivest, and N. Triandopoulos,
+  \emph{Defending against the Unknown Enemy: Applying FlipIt to System Security},
+  GameSec,
+  2012.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,74 @@
+\documentclass[a4paper]{article}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+
+\usepackage{rotating}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel} 
+\usepackage[textwidth=16cm,textheight=24cm]{geometry}
+
+\tikzstyle{vide} = [minimum size=0cm]
+\tikzstyle{p1} = [style={circle,fill=red,draw}, anchor=mid]
+\tikzstyle{pf1} = [style={circle,fill=red,draw}, right=0cm, above=0cm, anchor=mid]
+\tikzstyle{p2} = [style={circle,fill=blue,draw}, anchor=mid]
+\tikzstyle{pf2} = [style={circle,fill=blue,draw}, pos=0.5, right=0cm, above=0cm, anchor=mid]
+\tikzstyle{milieu} = []
+\tikzstyle{fake} = [draw=none]
+\tikzstyle{trait} = []
+\tikzstyle{rempli1} = [draw=none, fill=red!20]
+\tikzstyle{rempli2} = [draw=none, fill=blue!20]
+
+
+\begin{document}
+
+\begin{figure}[!t, scale=0.8]
+\begin{tikzpicture}[>=stealth',shorten >=1pt,auto,node distance=1cm,thick]
+
+	\node[] (centre) {};	
+	\node[vide, node distance = 8cm] (gauchem)[left of=centre] {};
+	\node[vide, node distance = 8cm] (droitem)[right of=centre] {};
+	\node[vide, node distance = 1cm] (gaucheh)[above of=gauchem] {};
+	\node[vide, node distance = 1cm] (droiteh)[above of=droitem] {};
+	\node[vide, node distance = 1cm] (gaucheb)[below of=gauchem] {};
+	\node[vide, node distance = 1cm] (droiteb)[below of=droitem] {};
+
+	\draw[fake] (gaucheh) --%
+			node[pf1, pos=0.0](p1x1){}%
+			node[pf1, pos=0.2](p1x2){}%
+			node[pf1, pos=0.4](p1x3){}%
+			node[pf1, pos=0.6](p1x4){}%
+			node[pf1, pos=0.8](p1x5){}%
+			node[pf1, pos=1.0](p1x6){}%
+							 (droiteh);
+							 
+	\draw[fake] (gaucheb) -- %
+			node[pf2, pos=0.07](p2x1){}%
+			node[pf2, pos=0.37](p2x2){}%
+			node[pf2, pos=0.67](p2x3){}%
+			node[pf2, pos=0.97](p2x4){}%
+							(droiteb);
+	
+	\draw[rempli1] (p1x1) -| ($(p2x1.mid)+(0,1)$) -| (p1x1);
+	\draw[rempli1] (p1x2) -| ($(p2x2.mid)+(0,1)$) -| (p1x2);
+	\draw[rempli1] (p1x3) -| ($(p2x3.mid)+(0,1)$) -| (p1x3);
+	\draw[rempli1] (p1x5) -| ($(p2x4.mid)+(0,1)$) -| (p1x5);
+	
+	\draw[rempli2] (p2x1) -| ($(p1x2.mid)+(0,-1)$) -| (p2x1);
+	\draw[rempli2] (p2x2) -| ($(p1x3.mid)+(0,-1)$) -| (p2x2);
+	\draw[rempli2] (p2x3) -| ($(p1x5.mid)+(0,-1)$) -| (p2x3);
+	\draw[rempli2] (p2x4) -| ($(p1x6.mid)+(0,-1)$) -| (p2x4);
+	
+	\draw[milieu] (gauchem) -- (droitem);
+	
+	\draw[trait] (p1x1) -| (p2x1) -| (p1x2) -| (p2x2) -| (p1x3) -- (p1x4) -| (p2x3) -| (p1x5) -| (p2x4) -| (p1x6);
+
+\end{tikzpicture}
+\end{figure}
+
+
+
+\end{document}

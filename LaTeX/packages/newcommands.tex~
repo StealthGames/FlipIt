@@ -10,4 +10,3 @@
 \newcommand{\proba}[1]{\mbb{P}\left(#1\right)}
 \newcommand{\espe}[1]{\mbb{E}\left[#1\right]}
 \newcommand{\ee}[1]{\mathrm{e}^{#1}}
-\newcommand{\dd}[1]{\mathrm{d}#1}

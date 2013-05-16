@@ -84,6 +84,11 @@ This \qquote{average gain rate for player $ i $} will found our game's strategy 
 
 \section{Playing periodically}
 \input{periodique}
+
+\section{Playing exponentially against periodic strategy}
+\input{expVsPeriod}
+
+
 \begin{thebibliography}{9}
 
 \bibitem{illegi}

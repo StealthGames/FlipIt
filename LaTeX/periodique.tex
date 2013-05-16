@@ -1,4 +1,4 @@
-We assume here that both players have a periodic strategy.Let $ \varphi_i $ and 
+We assume here that both players have a periodic strategy. Let $ \varphi_i $ and 
 $ \alpha_i $ the phase and the period of the player $i$. So, we have for each $n$,
 \[ t_{i,n} = \varphi_i + n.\alpha_i \]
 
@@ -9,7 +9,31 @@ It's easy to sea that :
 \[ \Gamma\left(\alpha_0,\:\alpha_1,\:\varphi_1\right) =
 \Gamma\left(1,\:\frac{\alpha_1}{\alpha_0},\:\frac{\varphi_1}{\alpha_0}\right) \]
 
-\manque{Dessin et explication pour arriver à la formule}
+\begin{center}\begin{figure}[h!, scale=.8]\centering\begin{tikzpicture}[]
+%\draw (0.,-3) -- (0.,3); 
+\drawtextforplayer{7.272727}{1}{$t_k$}
+\drawtextforplayer{12.363636}{1}{$t_{k+1}$}
+\drawtextforplayer{1.454545}{-1}{$n$}
+\drawtextforplayer{8.727273}{-1}{$n+1$}
+\drawtextforplayer{16.000000}{-1}{$n+2$}
+\drawarrowforplayerwithtext{1.454545}{7.272727}{1}{$\mathrm{frac}\left(t_k\right)$}
+\drawarrowforplayerwithtext{8.727273}{12.363636}{1}{$\mathrm{frac}\left(t_{k+1}\right)$}
+\drawverticalline{1.454545}
+\drawverticalline{8.727273}
+\drawverticalline{16.}
+
+\drawbulletforplayer{7.272727}{1}
+\drawbulletforplayer{12.363636}{1}
+\drawbulletforplayer{1.454545}{-1}
+\drawbulletforplayer{8.727273}{-1}
+\drawbulletforplayer{16.000000}{-1}
+\drawrectforplayer{0.000000}{1.454545}{1}
+\drawrectforplayer{1.454545}{7.272727}{-1}
+\drawrectforplayer{7.272727}{8.727273}{1}
+\drawrectforplayer{8.727273}{12.363636}{-1}
+\drawrectforplayer{12.363636}{16.000000}{1}
+\drawrectforplayer{16.000000}{17.000000}{-1}
+\end{tikzpicture}\end{figure}\end{center}
 
 \[
 \Gamma\left(1,\:\alpha,\:\varphi\right)=

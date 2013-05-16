@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.12)  19 APR 2013 17:47
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.12)  26 APR 2013 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -757,38 +757,30 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (70.5556pt too wide) in paragraph at lines 41--42
+Overfull \hbox (65.84296pt too wide) in paragraph at lines 38--39
  [][] 
  []
 
-[1
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sequence.aux) ) 
+] (./sequence.aux) ) 
 Here is how much of TeX's memory you used:
- 11892 strings out of 495059
- 215049 string characters out of 3182030
- 269238 words of memory out of 3000000
- 14820 multiletter control sequences out of 15000+200000
- 4403 words of font info for 15 fonts, out of 3000000 for 9000
+ 11966 strings out of 495059
+ 216725 string characters out of 3182030
+ 269542 words of memory out of 3000000
+ 14889 multiletter control sequences out of 15000+200000
+ 8231 words of font info for 25 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,8n,65p,472b,652s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/
-simon/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk>
-Output written on sequence.pdf (1 page, 2599 bytes).
+ 60i,8n,65p,472b,722s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/simon/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm10
+00.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on sequence.pdf (1 page, 26221 bytes).
 PDF statistics:
- 16 PDF objects out of 1000 (max. 8388607)
- 11 compressed objects within 1 object stream
+ 28 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

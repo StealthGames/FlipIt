@@ -7,7 +7,3 @@
 \newcommand{\pars}[1]{\left(#1\right)}
 \newcommand{\manque}[1]{\fbox{\begin{minipage}[t]{1\columnwidth}\textbf{A faire :}\\\texttt{#1}\end{minipage}}}
 \newcommand{\segint}[1]{\left[\!\left[#1\right]\!\right]}
-\newcommand{\proba}[1]{\mbb{P}\left(#1\right)}
-\newcommand{\espe}[1]{\mbb{E}\left[#1\right]}
-\newcommand{\ee}[1]{\mathrm{e}^{#1}}
-\newcommand{\dd}[1]{\mathrm{d}#1}

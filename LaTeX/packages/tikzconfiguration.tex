@@ -7,7 +7,9 @@
 \tikzstyle{p2} = [style={circle,fill=red!70,draw}, anchor=mid]
 \tikzstyle{rect1} = [fill=blue!50]
 \tikzstyle{rect2} = [fill=red!30]
-%\tikzstyle{fake} = [draw=none]
+\tikzstyle{fleche} = [<->, >=stealth', ultra thick]
+\tikzstyle{texte} = [font=\bfseries\LARGE]
+\tikzstyle{ligne} = [gray]
 %\tikzstyle{trait} = []
 %\tikzstyle{rempli1} = [draw=none, fill=red!20]
 %\tikzstyle{rempli2} = [draw=none, fill=blue!20]
@@ -32,6 +34,19 @@
   \ifthenelse{\equal{#3}{1}}%
       {\filldraw[rect1] (#1, \hauteurr) -- (#2, \hauteurr) -- (#2, 0) -- (#1, 0) -- cycle;}%
       {\filldraw[rect2] (#1, 0) -- (#2, 0) -- (#2, -\hauteurr) -- (#1, -\hauteurr) -- cycle;};
+}
+\newcommand{\drawtextforplayer}[3]{
+  \ifthenelse{\equal{#2}{1}}%
+      {\node[texte] at (#1, \hauteur+.5) {#3}}%
+      {\node[texte] at (#1, -\hauteur-.5) {#3}};
+}
+\newcommand{\drawarrowforplayerwithtext}[4]{
+  \ifthenelse{\equal{#3}{1}}%
+      {\draw[fleche] (#1, \hauteurr*.5) -- node[texte, above, pos=.5]{#4} (#2, \hauteurr*.5)}%
+      {\draw[fleche] (#1, -\hauteurr*.5) -- node[texte, below, pos=.5]{#4} (#2, -\hauteurr*.5)};
+}
+\newcommand{\drawverticalline}[1]{
+  \draw[ligne] (#1, -\hauteur) -- (#1, +\hauteur+1.);
 }
 \newcommand{\drawrectforplayerWithText}[4]{
   \ifthenelse{\equal{#3}{1}}%

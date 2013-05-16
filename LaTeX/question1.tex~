@@ -1,0 +1,14 @@
+\paragraph{Question 1} 
+
+\begin{figure}[!h]
+\hspace{-.13\linewidth}
+	\begin{minipage}[c]{.25\linewidth}
+	   \includegraphics[scale=0.3]{figure1.eps}
+	\end{minipage}\hspace{.14\linewidth}
+	\begin{minipage}[c]{.25\linewidth}
+	   \includegraphics[scale=0.3]{figure3.eps}
+	\end{minipage}\hspace{.15\linewidth}
+	\begin{minipage}[c]{.25\linewidth}
+	   \includegraphics[scale=0.3]{figure5.eps}
+	\end{minipage}
+\end{figure}

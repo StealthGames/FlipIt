@@ -1,5 +1,0 @@
-% Bonjour !
-
-\input{header}
-\input{newcommands}
-\input{tikzconfiguration}
